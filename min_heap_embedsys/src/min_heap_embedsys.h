@@ -18,6 +18,8 @@ Also, given a node at index i, its parent node shall be at index (i / 2).
 #define RCHILD(x) 2 * x + 2
 #define PARENT(x) (x - 1) / 2
 
+#define ASSERT(x)
+
 #define MIN_HEAP_MAX_ELEM_NUM 16
 
 typedef struct _NODE_T {
@@ -26,7 +28,7 @@ typedef struct _NODE_T {
 
 typedef struct _MIN_HEAP_T {
     int size ;
-    node elem[MIN_HEAP_MAX_ELEM_NUM] ;
+    NODE_T elem[MIN_HEAP_MAX_ELEM_NUM] ;
 } MIN_HEAP_T, *P_MIN_HEAP_T ;
 
 
