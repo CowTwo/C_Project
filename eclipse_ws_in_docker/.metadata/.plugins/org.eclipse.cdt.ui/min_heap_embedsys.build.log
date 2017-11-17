@@ -1,0 +1,6 @@
+07:30:59 **** Incremental Build of configuration Debug for project min_heap_embedsys ****
+make all 
+make: Nothing to be done for 'all'.
+
+07:30:59 Build Finished (took 341ms)
+

@@ -1,0 +1,12 @@
+/*
+ * invoke_sample_c_lib.c
+ *
+ *  Created on: Nov 16, 2017
+ *      Author: root
+ */
+
+#include "sample_c_func.h"
+
+int main(void) {
+	sample_c_func_1();
+}

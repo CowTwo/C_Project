@@ -1,0 +1,15 @@
+14:19:59 **** Build of configuration Debug for project Invoke_Sample_C_Lib ****
+make all 
+Building file: ../invoke_sample_c_lib.c
+Invoking: Cross GCC Compiler
+gcc -I/work/C_Project/sample_c_lib -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"invoke_sample_c_lib.d" -MT"invoke_sample_c_lib.d" -o "invoke_sample_c_lib.o" "../invoke_sample_c_lib.c"
+Finished building: ../invoke_sample_c_lib.c
+ 
+Building target: Invoke_Sample_C_Lib
+Invoking: Cross GCC Linker
+gcc -L/work/C_Project/sample_c_lib/Debug -o "Invoke_Sample_C_Lib"  ./invoke_sample_c_lib.o   -lsample_c_lib
+Finished building target: Invoke_Sample_C_Lib
+ 
+14:20:03 **** Incremental Build of configuration Debug for project Invoke_Sample_C_Lib ****
+make all 
+make: Nothing to be done for 'all'.

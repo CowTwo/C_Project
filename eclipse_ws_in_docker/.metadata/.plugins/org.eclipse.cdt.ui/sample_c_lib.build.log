@@ -1,0 +1,16 @@
+13:10:27 **** Incremental Build of configuration Debug for project sample_c_lib ****
+make all 
+Building file: ../sample_c_func.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"sample_c_func.d" -MT"sample_c_func.d" -o "sample_c_func.o" "../sample_c_func.c"
+Finished building: ../sample_c_func.c
+ 
+Building target: libsample_c_lib.a
+Invoking: Cross GCC Archiver
+ar -r  "libsample_c_lib.a"  ./sample_c_func.o   
+ar: creating libsample_c_lib.a
+Finished building target: libsample_c_lib.a
+ 
+
+13:10:28 Build Finished (took 626ms)
+
