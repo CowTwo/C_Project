@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;openssl_trial/sae.h&apos; to &apos;my_sae.h&apos;" description="Rename resource &apos;sae.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sae.h" name="my_sae.h" stamp="1510993491834" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;openssl_trial/my_sae.h&apos; to &apos;main.h&apos;" description="Rename resource &apos;my_sae.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="my_sae.h" name="main.h" stamp="1510993540398" updateReferences="true"/>
+</session>

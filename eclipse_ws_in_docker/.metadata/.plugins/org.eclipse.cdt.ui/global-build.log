@@ -1,15 +1,125 @@
-14:19:59 **** Build of configuration Debug for project Invoke_Sample_C_Lib ****
+08:55:21 **** Build of configuration Debug for project openssl_trial ****
 make all 
-Building file: ../invoke_sample_c_lib.c
+Building file: ../main.c
 Invoking: Cross GCC Compiler
-gcc -I/work/C_Project/sample_c_lib -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"invoke_sample_c_lib.d" -MT"invoke_sample_c_lib.d" -o "invoke_sample_c_lib.o" "../invoke_sample_c_lib.c"
-Finished building: ../invoke_sample_c_lib.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+Finished building: ../main.c
  
-Building target: Invoke_Sample_C_Lib
+Building target: openssl_trial
 Invoking: Cross GCC Linker
-gcc -L/work/C_Project/sample_c_lib/Debug -o "Invoke_Sample_C_Lib"  ./invoke_sample_c_lib.o   -lsample_c_lib
-Finished building target: Invoke_Sample_C_Lib
+gcc  -o "openssl_trial"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_trial
  
-14:20:03 **** Incremental Build of configuration Debug for project Invoke_Sample_C_Lib ****
+08:55:29 **** Incremental Build of configuration Debug for project openssl_trial ****
+make all 
+make: Nothing to be done for 'all'.
+09:25:21 **** Incremental Build of configuration Debug for project openssl_trial ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+In file included from ../main.c:14:0:
+../main.h:78:22: error: field 'link_state' has incomplete type
+     enum plink_state link_state;
+                      ^
+../main.c: In function 'main':
+../main.c:72:9: warning: implicit declaration of function 'sae_initialize' [-Wimplicit-function-declaration]
+     if (sae_initialize(meshid, &sae_conf) < 0) {
+         ^
+../main.c: In function 'sae_initialize':
+../main.c:133:13: warning: implicit declaration of function 'compute_group_definition' [-Wimplicit-function-declaration]
+         if (compute_group_definition(curr, config->pwd, config->group[i])) {
+             ^
+../main.c:143:9: error: too many arguments to function 'puts'
+         puts("group %d is configured, prime is %d"
+         ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+09:26:22 **** Incremental Build of configuration Debug for project openssl_trial ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:72:9: warning: implicit declaration of function 'sae_initialize' [-Wimplicit-function-declaration]
+     if (sae_initialize(meshid, &sae_conf) < 0) {
+         ^
+../main.c: In function 'sae_initialize':
+../main.c:133:13: warning: implicit declaration of function 'compute_group_definition' [-Wimplicit-function-declaration]
+         if (compute_group_definition(curr, config->pwd, config->group[i])) {
+             ^
+../main.c:143:9: error: too many arguments to function 'puts'
+         puts("group %d is configured, prime is %d"
+         ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+09:26:58 **** Incremental Build of configuration Debug for project openssl_trial ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'sae_initialize':
+../main.c:133:13: warning: implicit declaration of function 'compute_group_definition' [-Wimplicit-function-declaration]
+         if (compute_group_definition(curr, config->pwd, config->group[i])) {
+             ^
+../main.c:143:9: error: too many arguments to function 'puts'
+         puts("group %d is configured, prime is %d"
+         ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+09:31:46 **** Incremental Build of configuration Debug for project openssl_trial ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'compute_group_definition':
+../main.c:103:13: error: too many arguments to function 'puts'
+             puts("unsupported group %d\n", num);
+             ^
+../main.c: In function 'sae_initialize':
+../main.c:217:9: error: too many arguments to function 'puts'
+         puts("group %d is configured, prime is %d"
+         ^
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+09:32:35 **** Incremental Build of configuration Debug for project openssl_trial ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'compute_group_definition':
+../main.c:103:13: error: too many arguments to function 'puts'
+             puts("unsupported group %d\n", num);
+             ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+09:32:48 **** Incremental Build of configuration Debug for project openssl_trial ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: openssl_trial
+Invoking: Cross GCC Linker
+gcc  -o "openssl_trial"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_trial
+ 
+09:37:28 **** Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.c"
+Finished building: ../src/HelloWorld.c
+ 
+Building target: HelloWorld
+Invoking: Cross G++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+09:37:31 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:50:02 **** Incremental Build of configuration Debug for project openssl_trial ****
 make all 
 make: Nothing to be done for 'all'.

@@ -1,0 +1,27 @@
+/*
+ * sae.h
+ *
+ *  Created on: Nov 18, 2017
+ *      Author: root
+ */
+
+#ifndef MAIN_H_
+#define MAIN_H_
+
+#define    SAE_MAX_EC_GROUPS    10
+#define    SAE_MAX_PASSWORD_LEN 80
+
+struct sae_config {
+    int group[SAE_MAX_EC_GROUPS];
+    int num_groups;
+    char pwd[SAE_MAX_PASSWORD_LEN];
+    int debug;
+    int retrans;
+    int pmk_expiry;
+    int open_threshold;
+    int blacklist_timeout;
+    int giveup_threshold;
+};
+
+
+#endif /* MAIN_H_ */

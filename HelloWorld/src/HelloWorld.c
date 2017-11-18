@@ -13,6 +13,7 @@
 
 int main(void) {
 	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	printf("JSWAN test %d", 5);
 	return EXIT_SUCCESS;
 }
 

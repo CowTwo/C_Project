@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 17, 2017
+ *      Author: root
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <openssl/hmac.h>
+#include <openssl/rand.h>
+
+int main(void) {
+	BIGNUM *x, *y, *mask;
+
+    if (((mask = BN_new()) == NULL)) {
+        puts("unable to commit to peer!\n");
+        return -1;
+    }
+
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}

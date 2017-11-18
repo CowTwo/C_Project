@@ -1,0 +1,12 @@
+21:58:50 **** Build of configuration Default for project authsae-master ****
+make all 
+mkdir -p build; cd build; cmake ..; make
+/bin/sh: 1: cmake: not found
+make[1]: Entering directory '/work/C_Project/RefCode/authsae-master/build'
+make[1]: *** No targets specified and no makefile found.  Stop.
+make[1]: Leaving directory '/work/C_Project/RefCode/authsae-master/build'
+Makefile:2: recipe for target 'all' failed
+make: *** [all] Error 2
+
+21:58:51 Build Finished (took 618ms)
+
