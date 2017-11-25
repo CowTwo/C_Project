@@ -45,6 +45,8 @@ int main(void) {
 	char *meshid="";
     struct sae_config sae_conf;
 
+    //sleep(20);
+
     if (conffile) {
         struct config_t cfg;
         struct config_setting_t *section;
@@ -214,8 +216,10 @@ JC: Commented out until we decide whether this is needed (in which case we must
             gd = curr;
         prev = curr;
         curr->next = NULL;
+#if 1
         printf("group %d is configured, prime is %d"
                 " bytes\n", curr->group_num, BN_num_bytes(curr->prime));
+#endif
     }
     return 1;
 }

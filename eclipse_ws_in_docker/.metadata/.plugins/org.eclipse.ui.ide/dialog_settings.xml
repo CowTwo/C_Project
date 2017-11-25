@@ -8,7 +8,7 @@
 		<item value="163" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
-		<item value="/work/C_Project" key="OUTSIDE_LOCATION"/>
+		<item value="/tmp" key="OUTSIDE_LOCATION"/>
 	</section>
 	<section name="NewWizardAction">
 	</section>

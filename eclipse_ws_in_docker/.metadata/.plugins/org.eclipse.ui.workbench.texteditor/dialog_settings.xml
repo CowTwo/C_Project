@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="sae_parse_libconfig" key="selection"/>
+		<item value="ourssid" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ourssid"/>
 			<item value="sae_parse_libconfig"/>
 			<item value="sae_conf"/>
 			<item value="config"/>

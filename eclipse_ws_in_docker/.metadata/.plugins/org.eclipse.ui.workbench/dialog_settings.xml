@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="367" key="DIALOG_X_ORIGIN"/>
-		<item value="8" key="DIALOG_Y_ORIGIN"/>
+		<item value="142" key="DIALOG_X_ORIGIN"/>
+		<item value="-11" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="804" key="DIALOG_WIDTH"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="737" key="DIALOG_HEIGHT"/>
+		<item value="-91" key="DIALOG_X_ORIGIN"/>
+		<item value="-161" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.cdt.ui.wizards.MakeProjFromExisting" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>

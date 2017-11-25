@@ -1,0 +1,3 @@
+buildConsole/keepLog=true
+buildConsole/logLocation=/work/C_Project/eclipse_ws_in_docker/.metadata/.plugins/org.eclipse.cdt.ui/openssl_trial.build.log
+eclipse.preferences.version=1
