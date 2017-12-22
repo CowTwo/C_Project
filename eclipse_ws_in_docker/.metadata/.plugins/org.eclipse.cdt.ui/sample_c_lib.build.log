@@ -1,4 +1,4 @@
-13:10:27 **** Incremental Build of configuration Debug for project sample_c_lib ****
+13:11:04 **** Build of configuration Debug for project sample_c_lib ****
 make all 
 Building file: ../sample_c_func.c
 Invoking: Cross GCC Compiler
@@ -12,5 +12,5 @@ ar: creating libsample_c_lib.a
 Finished building target: libsample_c_lib.a
  
 
-13:10:28 Build Finished (took 626ms)
+13:11:04 Build Finished (took 209ms)
 

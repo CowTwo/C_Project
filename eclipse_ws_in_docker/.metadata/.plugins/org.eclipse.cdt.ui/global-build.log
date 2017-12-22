@@ -1,80 +1,427 @@
-14:00:37 **** Build of configuration Debug for project openssl_trial ****
+11:57:42 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+In file included from ../main.c:14:0:
+../main.h:130:48: warning: 'struct ieee80211_mgmt_frame' declared inside parameter list
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+                                                ^
+../main.h:130:48: warning: its scope is only this definition or declaration, which is probably not what you want
+../main.c: In function 'main':
+../main.c:173:30: warning: passing argument 2 of 'process_commit' from incompatible pointer type [-Wincompatible-pointer-types]
+     if (process_commit(peer, frame, len) < 0) {
+                              ^
+In file included from ../main.c:14:0:
+../main.h:130:1: note: expected 'struct ieee80211_mgmt_frame *' but argument is of type 'struct ieee80211_mgmt_frame *'
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+ ^
+../main.c: In function 'commit_to_peer':
+../main.c:867:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: At top level:
+../main.c:906:1: error: conflicting types for 'process_commit'
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len)
+ ^
+In file included from ../main.c:14:0:
+../main.h:130:1: note: previous declaration of 'process_commit' was here
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+ ^
+../main.c: In function 'process_commit':
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+11:57:55 **** Clean-only build of configuration Debug for project openssl_peer ****
+make clean 
+rm -rf  ./main.o  ./main.d  openssl_peer
+ 
+11:58:06 **** Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+In file included from ../main.c:14:0:
+../main.h:130:48: warning: 'struct ieee80211_mgmt_frame' declared inside parameter list
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+                                                ^
+../main.h:130:48: warning: its scope is only this definition or declaration, which is probably not what you want
+../main.c: In function 'main':
+../main.c:173:30: warning: passing argument 2 of 'process_commit' from incompatible pointer type [-Wincompatible-pointer-types]
+     if (process_commit(peer, frame, len) < 0) {
+                              ^
+In file included from ../main.c:14:0:
+../main.h:130:1: note: expected 'struct ieee80211_mgmt_frame *' but argument is of type 'struct ieee80211_mgmt_frame *'
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+ ^
+../main.c: In function 'commit_to_peer':
+../main.c:867:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: At top level:
+../main.c:906:1: error: conflicting types for 'process_commit'
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len)
+ ^
+In file included from ../main.c:14:0:
+../main.h:130:1: note: previous declaration of 'process_commit' was here
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+ ^
+../main.c: In function 'process_commit':
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+12:00:10 **** Incremental Build of configuration Debug for project openssl_peer ****
 make all 
 Building file: ../main.c
 Invoking: Cross GCC Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
 ../main.c: In function 'main':
-../main.c:48:5: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
-     sleep(20);
+../main.c:173:9: warning: implicit declaration of function 'process_commit' [-Wimplicit-function-declaration]
+     if (process_commit(peer, frame, len) < 0) {
+         ^
+../main.c: In function 'commit_to_peer':
+../main.c:867:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+Finished building: ../main.c
+ 
+Building target: openssl_peer
+Invoking: Cross GCC Linker
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_peer
+ 
+12:01:20 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+In file included from ../main.c:14:0:
+../main.h:129:52: warning: 'struct ieee80211_mgmt_frame' declared inside parameter list
+ int process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+                                                    ^
+../main.h:129:52: warning: its scope is only this definition or declaration, which is probably not what you want
+../main.c: In function 'main':
+../main.c:173:30: warning: passing argument 2 of 'process_commit' from incompatible pointer type [-Wincompatible-pointer-types]
+     if (process_commit(peer, frame, len) < 0) {
+                              ^
+In file included from ../main.c:14:0:
+../main.h:129:5: note: expected 'struct ieee80211_mgmt_frame *' but argument is of type 'struct ieee80211_mgmt_frame *'
+ int process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
      ^
-Finished building: ../main.c
- 
-Building target: openssl_trial
-Invoking: Cross GCC Linker
-gcc  -o "openssl_trial"  ./main.o   -lcrypto -lconfig
-Finished building target: openssl_trial
- 
-14:00:52 **** Incremental Build of configuration Debug for project openssl_trial ****
-make all 
-Building file: ../main.c
-Invoking: Cross GCC Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: openssl_trial
-Invoking: Cross GCC Linker
-gcc  -o "openssl_trial"  ./main.o   -lcrypto -lconfig
-Finished building target: openssl_trial
- 
-14:00:55 **** Incremental Build of configuration Debug for project openssl_trial ****
-make all 
-make: Nothing to be done for 'all'.
-14:01:32 **** Incremental Build of configuration Debug for project openssl_trial ****
-make all 
-make: Nothing to be done for 'all'.
-14:01:49 **** Incremental Build of configuration Debug for project openssl_trial ****
-make all 
-make: Nothing to be done for 'all'.
-23:59:49 **** Incremental Build of configuration Debug for project openssl_trial ****
-make all 
-Building file: ../main.c
-Invoking: Cross GCC Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
-../main.c: In function 'sae_initialize':
-../main.c:220:27: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-                 " bytes\n", curr->group_num, BN_num_bytes(curr->prime));
-                           ^
-../main.c:220:44: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-                 " bytes\n", curr->group_num, BN_num_bytes(curr->prime));
+../main.c: In function 'commit_to_peer':
+../main.c:867:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: At top level:
+../main.c:906:1: error: conflicting types for 'process_commit'
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len)
+ ^
+In file included from ../main.c:14:0:
+../main.h:129:5: note: previous declaration of 'process_commit' was here
+ int process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+     ^
+../main.c: In function 'process_commit':
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
 subdir.mk:18: recipe for target 'main.o' failed
-                                            ^
-../main.c:220:44: warning: value computed is not used [-Wunused-value]
-../main.c:220:71: error: expected ';' before ')' token
-                 " bytes\n", curr->group_num, BN_num_bytes(curr->prime));
-                                                                       ^
-../main.c:220:71: error: expected statement before ')' token
 make: *** [main.o] Error 1
-00:00:13 **** Incremental Build of configuration Debug for project openssl_trial ****
+12:01:57 **** Incremental Build of configuration Debug for project openssl_peer ****
 make all 
 Building file: ../main.c
 Invoking: Cross GCC Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: openssl_trial
-Invoking: Cross GCC Linker
-gcc  -o "openssl_trial"  ./main.o   -lcrypto -lconfig
-Finished building target: openssl_trial
- 
-00:03:04 **** Incremental Build of configuration Debug for project openssl_trial ****
+In file included from ../main.c:14:0:
+../main.h:129:51: warning: 'struct ieee80211_mgmt_frame' declared inside parameter list
+ int process_commit(struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+                                                   ^
+../main.h:129:51: warning: its scope is only this definition or declaration, which is probably not what you want
+../main.c: In function 'main':
+../main.c:173:30: warning: passing argument 2 of 'process_commit' from incompatible pointer type [-Wincompatible-pointer-types]
+     if (process_commit(peer, frame, len) < 0) {
+                              ^
+In file included from ../main.c:14:0:
+../main.h:129:5: note: expected 'struct ieee80211_mgmt_frame *' but argument is of type 'struct ieee80211_mgmt_frame *'
+ int process_commit(struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+     ^
+../main.c: In function 'commit_to_peer':
+../main.c:867:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: At top level:
+../main.c:906:1: error: conflicting types for 'process_commit'
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len)
+ ^
+In file included from ../main.c:14:0:
+../main.h:129:5: note: previous declaration of 'process_commit' was here
+ int process_commit(struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+     ^
+../main.c: In function 'process_commit':
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+12:02:20 **** Incremental Build of configuration Debug for project openssl_peer ****
 make all 
 Building file: ../main.c
 Invoking: Cross GCC Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:173:9: warning: implicit declaration of function 'process_commit' [-Wimplicit-function-declaration]
+     if (process_commit(peer, frame, len) < 0) {
+         ^
+../main.c: In function 'commit_to_peer':
+../main.c:867:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:919:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
 Finished building: ../main.c
  
-Building target: openssl_trial
+Building target: openssl_peer
 Invoking: Cross GCC Linker
-gcc  -o "openssl_trial"  ./main.o   -lcrypto -lconfig
-Finished building target: openssl_trial
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_peer
+ 
+12:02:47 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+make: Nothing to be done for 'all'.
+12:04:18 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+make: Nothing to be done for 'all'.
+12:10:49 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:173:9: warning: implicit declaration of function 'process_commit' [-Wimplicit-function-declaration]
+     if (process_commit(peer, frame, len) < 0) {
+         ^
+../main.c: In function 'commit_to_peer':
+../main.c:907:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:959:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:959:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+Finished building: ../main.c
+ 
+Building target: openssl_peer
+Invoking: Cross GCC Linker
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_peer
+ 
+12:10:53 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:16 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+In file included from ../main.c:14:0:
+../main.h:130:48: warning: 'struct ieee80211_mgmt_frame' declared inside parameter list
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+                                                ^
+../main.h:130:48: warning: its scope is only this definition or declaration, which is probably not what you want
+../main.c: In function 'main':
+../main.c:173:30: warning: passing argument 2 of 'process_commit' from incompatible pointer type [-Wincompatible-pointer-types]
+     if (process_commit(peer, frame, len) < 0) {
+                              ^
+In file included from ../main.c:14:0:
+../main.h:130:1: note: expected 'struct ieee80211_mgmt_frame *' but argument is of type 'struct ieee80211_mgmt_frame *'
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+ ^
+../main.c: In function 'commit_to_peer':
+../main.c:907:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: At top level:
+../main.c:946:1: error: conflicting types for 'process_commit'
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len)
+ ^
+In file included from ../main.c:14:0:
+../main.h:130:1: note: previous declaration of 'process_commit' was here
+ process_commit (struct candidate *peer, struct ieee80211_mgmt_frame *frame, int len);
+ ^
+../main.c: In function 'process_commit':
+../main.c:959:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:959:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+12:15:48 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'commit_to_peer':
+../main.c:906:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+Finished building: ../main.c
+ 
+Building target: openssl_peer
+Invoking: Cross GCC Linker
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_peer
+ 
+12:17:50 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'commit_to_peer':
+../main.c:906:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+In file included from ../main.h:17:0,
+                 from ../main.c:14:
+../main.c: In function 'confirm_to_peer':
+../ieee802_11.h:71:16: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+ #define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
+                ^
+../main.c:1223:21: note: in expansion of macro 'MACSTR'
+     fprintf(stderr, MACSTR " in %s, sending %s (sc=%d), len %d\n",
+                     ^
+../main.c:1228:9: warning: implicit declaration of function 'meshd_write_mgmt' [-Wimplicit-function-declaration]
+     if (meshd_write_mgmt(buf, len, peer->cookie) != len) {
+         ^
+Finished building: ../main.c
+ 
+Building target: openssl_peer
+Invoking: Cross GCC Linker
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+./main.o: In function `confirm_to_peer':
+/work/C_Project/openssl_peer/Debug/../main.c:1228: undefined reference to `meshd_write_mgmt'
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'openssl_peer' failed
+make: *** [openssl_peer] Error 1
+12:18:21 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'commit_to_peer':
+../main.c:906:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+In file included from ../main.h:17:0,
+                 from ../main.c:14:
+../main.c: In function 'confirm_to_peer':
+../ieee802_11.h:71:16: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+ #define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
+                ^
+../main.c:1223:21: note: in expansion of macro 'MACSTR'
+     fprintf(stderr, MACSTR " in %s, sending %s (sc=%d), len %d\n",
+                     ^
+Finished building: ../main.c
+ 
+Building target: openssl_peer
+Invoking: Cross GCC Linker
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_peer
+ 
+12:18:32 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+make: Nothing to be done for 'all'.
+12:22:16 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:101:9: warning: unused variable 'len' [-Wunused-variable]
+     int len=sizeof(rxFrame);
+         ^
+../main.c: In function 'commit_to_peer':
+../main.c:906:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+In file included from ../main.h:17:0,
+                 from ../main.c:14:
+../main.c: In function 'confirm_to_peer':
+../ieee802_11.h:71:16: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+ #define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
+                ^
+../main.c:1223:21: note: in expansion of macro 'MACSTR'
+     fprintf(stderr, MACSTR " in %s, sending %s (sc=%d), len %d\n",
+                     ^
+Finished building: ../main.c
+ 
+Building target: openssl_peer
+Invoking: Cross GCC Linker
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_peer
+ 
+12:22:54 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'commit_to_peer':
+../main.c:906:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+In file included from ../main.h:17:0,
+                 from ../main.c:14:
+../main.c: In function 'confirm_to_peer':
+../ieee802_11.h:71:16: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+ #define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
+                ^
+../main.c:1223:21: note: in expansion of macro 'MACSTR'
+     fprintf(stderr, MACSTR " in %s, sending %s (sc=%d), len %d\n",
+                     ^
+Finished building: ../main.c
+ 
+Building target: openssl_peer
+Invoking: Cross GCC Linker
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_peer
  

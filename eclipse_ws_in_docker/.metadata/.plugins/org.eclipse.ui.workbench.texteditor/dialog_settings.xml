@@ -2,18 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ourssid" key="selection"/>
+		<item value="process_commit" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="ourssid"/>
-			<item value="sae_parse_libconfig"/>
-			<item value="sae_conf"/>
-			<item value="config"/>
-			<item value="confdir"/>
-			<item value="grp_def"/>
+			<item value="process_commit"/>
+			<item value="size of the prime"/>
+			<item value="prime"/>
+			<item value="delete_peer"/>
+			<item value="create_candidate"/>
+			<item value="LINUX"/>
+			<item value="H_Init"/>
+			<item value="h_init"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -22,7 +24,7 @@
 		<item value="303" key="DIALOG_WIDTH"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="404" key="DIALOG_HEIGHT"/>
-		<item value="535" key="DIALOG_X_ORIGIN"/>
-		<item value="118" key="DIALOG_Y_ORIGIN"/>
+		<item value="867" key="DIALOG_X_ORIGIN"/>
+		<item value="205" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

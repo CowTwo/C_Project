@@ -11,6 +11,13 @@
 		<item value="300" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_HEIGHT"/>
 		<item value="635" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_X_ORIGIN"/>
 	</section>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item value="450" key="DIALOG_WIDTH"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="432" key="DIALOG_HEIGHT"/>
+		<item value="461" key="DIALOG_X_ORIGIN"/>
+		<item value="99" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.cdt.internal.ui.browser.opentype.OpenTypeActionSettings">
 		<item value="true" key="show_enums"/>
 		<item value="true" key="show_unions"/>
@@ -27,6 +34,10 @@
 		<item value="true" key="show_typedefs"/>
 		<item value="true" key="show_variables"/>
 		<item value="692" key="height"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="162" key="size.height"/>
+		<item value="442" key="size.width"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>

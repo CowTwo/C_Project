@@ -1,15 +1,6 @@
-00:03:04 **** Incremental Build of configuration Debug for project openssl_trial ****
+11:14:05 **** Incremental Build of configuration Debug for project openssl_trial ****
 make all 
-Building file: ../main.c
-Invoking: Cross GCC Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
-Finished building: ../main.c
- 
-Building target: openssl_trial
-Invoking: Cross GCC Linker
-gcc  -o "openssl_trial"  ./main.o   -lcrypto -lconfig
-Finished building target: openssl_trial
- 
+make: Nothing to be done for 'all'.
 
-00:03:05 Build Finished (took 513ms)
+11:14:05 Build Finished (took 165ms)
 

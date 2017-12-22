@@ -1,0 +1,33 @@
+12:22:54 **** Incremental Build of configuration Debug for project openssl_peer ****
+make all 
+Building file: ../main.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c: In function 'commit_to_peer':
+../main.c:906:21: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+     fprintf(stderr, "peer " MACSTR " in %s, sending %s (%s token), len %d, group %d\n",
+                     ^
+../main.c: In function 'process_commit':
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 5 has type 'long unsigned int' [-Wformat=]
+      fprintf(stderr,"invalid size for commit message (%d < %d+%d+(2*%d)+%d = %d))\n", len,
+                     ^
+../main.c:958:21: warning: format '%d' expects argument of type 'int', but argument 8 has type 'long unsigned int' [-Wformat=]
+In file included from ../main.h:17:0,
+                 from ../main.c:14:
+../main.c: In function 'confirm_to_peer':
+../ieee802_11.h:71:16: warning: format '%d' expects argument of type 'int', but argument 12 has type 'size_t {aka long unsigned int}' [-Wformat=]
+ #define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
+                ^
+../main.c:1223:21: note: in expansion of macro 'MACSTR'
+     fprintf(stderr, MACSTR " in %s, sending %s (sc=%d), len %d\n",
+                     ^
+Finished building: ../main.c
+ 
+Building target: openssl_peer
+Invoking: Cross GCC Linker
+gcc  -o "openssl_peer"  ./main.o   -lcrypto -lconfig
+Finished building target: openssl_peer
+ 
+
+12:22:54 Build Finished (took 573ms)
+
