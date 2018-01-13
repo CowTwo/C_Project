@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+ Name        : myUtility.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "myUtility.h"
+
+int main(void) {
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	printMacAddrExample();
+	return EXIT_SUCCESS;
+}
+
+void printMacAddrExample()
+{
+	unsigned char myMac[6]={0x10,0x20,0x30,0x00,0x00,0x00};
+	fprintf(stderr,"myMac is" MACSTR "\n", MAC2STR(myMac));
+}
