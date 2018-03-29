@@ -1,15 +1,6 @@
-06:41:42 **** Build of configuration Debug for project valgrind_example ****
+03:29:31 **** Incremental Build of configuration Debug for project valgrind_example ****
 make all 
-Building file: ../src/valgrind_example.c
-Invoking: Cross GCC Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/valgrind_example.d" -MT"src/valgrind_example.d" -o "src/valgrind_example.o" "../src/valgrind_example.c"
-Finished building: ../src/valgrind_example.c
- 
-Building target: valgrind_example
-Invoking: Cross GCC Linker
-gcc  -o "valgrind_example"  ./src/valgrind_example.o   
-Finished building target: valgrind_example
- 
+make: Nothing to be done for 'all'.
 
-06:41:43 Build Finished (took 363ms)
+03:29:32 Build Finished (took 610ms)
 

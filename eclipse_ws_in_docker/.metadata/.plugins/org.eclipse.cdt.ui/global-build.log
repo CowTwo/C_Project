@@ -10,3 +10,9 @@ Invoking: Cross GCC Linker
 gcc  -o "valgrind_example"  ./src/valgrind_example.o   
 Finished building target: valgrind_example
  
+03:29:31 **** Incremental Build of configuration Debug for project valgrind_example ****
+make all 
+make: Nothing to be done for 'all'.
+03:31:17 **** Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
