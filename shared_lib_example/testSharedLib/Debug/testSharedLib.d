@@ -1,0 +1,1 @@
+testSharedLib.d: ../testSharedLib.c
